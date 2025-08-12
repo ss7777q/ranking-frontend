@@ -1,0 +1,220 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 自定义样式 */
+.site-layout .site-layout-background {
+  background: #fff;
+  /* 移动端横向滚动支持 */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ranking-table {
+  margin-top: 16px;
+}
+
+.ranking-table .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.ranking-table .ant-table-tbody > tr:hover > td {
+  background-color: #e6f7ff;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stats-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stats-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 8px;
+}
+
+.stats-card .ant-statistic-content {
+  color: white !important;
+}
+
+.search-result-section {
+  margin-bottom: 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.search-result-section:last-child {
+  margin-bottom: 0;
+}
+
+.filter-section {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.pagination-section {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* DamageCalculator 移动端优化 */
+.damage-calculator {
+  padding: 8px;
+}
+
+.damage-calculator .ant-card {
+  margin-bottom: 16px;
+}
+
+.damage-calculator .ant-card-head-title {
+  font-size: 16px;
+}
+
+.damage-calculator .ant-card-body {
+  padding: 12px;
+}
+
+/* 移动端响应式 */
+@media (max-width: 768px) {
+  .damage-calculator {
+    padding: 4px;
+  }
+  
+  .damage-calculator .ant-card {
+    margin-bottom: 12px;
+  }
+  
+  .damage-calculator .ant-card-body {
+    padding: 8px;
+  }
+  
+  .damage-calculator .ant-row {
+    margin-left: -4px !important;
+    margin-right: -4px !important;
+  }
+  
+  .damage-calculator .ant-col {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    margin-bottom: 8px;
+  }
+  
+  .damage-calculator .ant-input,
+  .damage-calculator .ant-select-selector,
+  .damage-calculator .ant-btn {
+    font-size: 14px;
+    height: 36px;
+    line-height: 34px;
+  }
+  
+  .damage-calculator .ant-input {
+    padding: 4px 8px;
+  }
+  
+  .damage-calculator .ant-select-selection-item {
+    line-height: 34px;
+  }
+  
+  .damage-calculator .ant-typography {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  /* 强制单列布局 */
+  .damage-calculator .mode-selection .ant-col,
+  .damage-calculator .stats-input .ant-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* BOSS搜索区域优化 */
+  .damage-calculator .boss-search .ant-col {
+    /* 保留行距但不强制 100% 宽度，以便使用 xs=16/8 的两列布局 */
+    margin-bottom: 8px;
+  }
+  
+  /* 结果显示区域 */
+  .damage-calculator .result-card {
+    font-size: 12px;
+  }
+  
+  .damage-calculator .result-card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .damage-calculator .result-card h4 {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  
+  .damage-calculator .result-card p {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .damage-calculator .ant-card-head-title {
+    font-size: 14px;
+  }
+  
+  .damage-calculator .ant-input,
+  .damage-calculator .ant-select-selector,
+  .damage-calculator .ant-btn {
+    font-size: 12px;
+    height: 32px;
+    line-height: 30px;
+  }
+  
+  .damage-calculator .ant-select-selection-item {
+    line-height: 30px;
+  }
+  
+  .damage-calculator .ant-typography {
+    font-size: 11px;
+  }
+}

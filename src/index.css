@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 表格样式优化 */
+.ant-table-tbody > tr:hover > td {
+  background: #e6f7ff !important;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa !important;
+  font-weight: 600;
+}
+
+/* 卡片阴影优化 */
+.ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+/* 按钮样式优化 */
+.ant-btn-primary {
+  box-shadow: 0 2px 4px rgba(24, 144, 255, 0.2);
+}
+
+/* 统计卡片样式 */
+.stats-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+html, body, #root, .ant-layout {
+  height: 100%;
+}
+.ant-layout-content {
+  overflow: auto;
+}
+
+.stats-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.stats-card .ant-statistic-content {
+  color: white;
+}
+
+/* 搜索结果高亮 */
+.search-highlight {
+  background-color: #fff2b8;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
